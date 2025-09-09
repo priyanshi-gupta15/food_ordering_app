@@ -1,5 +1,4 @@
 import React from "react";
-import User from "./user";
 import UserClass from "./userClass";
 
 //functional component
