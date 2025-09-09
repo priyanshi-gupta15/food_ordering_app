@@ -15,7 +15,6 @@
 
 //   //update totalquantity
 
-  
 // const [dishcount, setDishCount] = useState(0);
 //   return (
 //     <div
@@ -90,13 +89,11 @@
 
 // export default MenuItem;
 
-
-
 //new code with redux
 import { useDispatch, useSelector } from "react-redux";
 import { addItemToCart, removeItemFromCart } from "../utils/cartSlice";
 
-const MenuItem = ({ item, cardIndex }) => {
+const MenuItems = ({ item, cardIndex }) => {
   const dispatch = useDispatch();
 
   // Get quantity from Redux for this specific item
@@ -168,6 +165,4 @@ const MenuItem = ({ item, cardIndex }) => {
   );
 };
 
-export default MenuItem;
-
-    
+export default MenuItems;

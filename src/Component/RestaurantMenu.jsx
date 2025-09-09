@@ -2,7 +2,7 @@ import React , {useEffect,useState} from "react";
 import RestaurantShimer from "./RestaurantShimer";
 import { useParams } from "react-router-dom";
 import { useMenuItem } from "../utils/useMenuItem";
-import MenuItem from "./menuItem";
+import MenuItems from "./Menulist"
 
 
 const RestaurantMenu = () => {
@@ -113,7 +113,7 @@ const RestaurantMenu = () => {
                     {Array.isArray(itemCards) && itemCards.length > 0 ? (
                       itemCards.map((card, cardIndex) => {
                         const info = card.card.info;
-                        return <MenuItem key={info.id} item={info} cardIndex={cardIndex} />;
+                        return <MenuItems key={info.id} item={info} cardIndex={cardIndex} />;
                       })
                     ) : (
                       <p className="col-span-2 text-center text-xl font-semibold text-gray-500">
